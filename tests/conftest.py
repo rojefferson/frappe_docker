@@ -73,8 +73,8 @@ def frappe_site(compose: Compose):
         "new-site",
         # TODO: change to --mariadb-user-host-login-scope=%
         "--no-mariadb-socket",
-        "--db-root-password=123",
-        "--admin-password=admin",
+        "--db-root-password=1qTasZ@2ws1x123",
+        "--admin-password=1qTasZ@2ws1x123",
         site_name,
     )
     compose("restart", "backend")
@@ -97,8 +97,8 @@ def erpnext_site(compose: Compose):
         "new-site",
         # TODO: change to --mariadb-user-host-login-scope=%
         "--no-mariadb-socket",
-        "--db-root-password=123",
-        "--admin-password=admin",
+        "--db-root-password=1qTasZ@2ws1x123",
+        "--admin-password=1qTasZ@2ws1x123",
         "--install-app=erpnext",
         site_name,
     ]
