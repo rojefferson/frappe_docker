@@ -112,7 +112,7 @@ def postgres_setup(compose: Compose):
     compose.stop()
     compose("-f", "overrides/compose.postgres.yaml", "up", "-d", "--quiet-pull")
     compose.bench("set-config", "-g", "root_login", "postgres")
-    compose.bench("set-config", "-g", "root_password", "123")
+    compose.bench("set-config", "-g", "root_password", "1qTasZ@2ws1x123")
     yield
     compose.stop()
 

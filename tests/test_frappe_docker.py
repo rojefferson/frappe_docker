@@ -147,5 +147,5 @@ class TestPostgres:
             "--db-type",
             "postgres",
             "--admin-password",
-            "admin",
+            "1qTasZ@2ws1x123",
         )

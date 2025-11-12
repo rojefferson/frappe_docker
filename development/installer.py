@@ -103,7 +103,7 @@ def get_args_parser():
         action="store",
         type=str,
         help="admin password for site, default: admin",  # noqa: E501
-        default="admin",
+        default="1qTasZ@2ws1x123",
     )
     parser.add_argument(
         "-d",
@@ -211,7 +211,7 @@ def create_site_in_bench(args):
             f"--db-host=mariadb",  # Should match the compose service name
             f"--db-type={args.db_type}",  # Add the selected database type
             f"--mariadb-user-host-login-scope=%",
-            f"--db-root-password=123",  # Replace with your MariaDB password
+            f"--db-root-password=1qTasZ@2ws1x123",  # Replace with your MariaDB password
             f"--admin-password={args.admin_password}",
         ]
     else:
@@ -226,7 +226,7 @@ def create_site_in_bench(args):
             f"--db-root-username=root",
             f"--db-host=postgresql",  # Should match the compose service name
             f"--db-type={args.db_type}",  # Add the selected database type
-            f"--db-root-password=123",  # Replace with your PostgreSQL password
+            f"--db-root-password=1qTasZ@2ws1x123",  # Replace with your PostgreSQL password
             f"--admin-password={args.admin_password}",
         ]
     apps = os.listdir(f"{os.getcwd()}/{args.bench_name}/apps")
